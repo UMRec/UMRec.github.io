@@ -108,6 +108,37 @@
             flex: 0 0 48%;
         }
         
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            font-size: 1.0em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center; /* 更改：水平居中 */
+            vertical-align: middle; /* 新增：垂直居中 */
+        }
+        
+        /* 新增：确保第一列 (时间) 不会换行 */
+        th:first-child, td:first-child {
+            white-space: nowrap;
+        }
+        
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        /* ===== 样式结束 ===== */
+        
         @media (max-width: 768px) {
             .column {
                 flex: 0 0 100%;
@@ -170,6 +201,107 @@
                 </ul>
             </div>
         </div>
+	
+	<h2>Workshop Program</h2>
+        <h3>IEEE ICDM 2025 UMRec Workshop Tentative  Schedule</h3>
+        <p><strong>Day 2: Thursday, November 13, 2025</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Session</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:20-9:00</td>
+                    <td>Presidential Ballroom</td>
+                    <td>Opening Ceremony</td>
+                </tr>
+                <tr>
+                    <td>10:30-10:50</td>
+                    <td>Statler B</td>
+                    <td>Keynote Talk 1 by Prof. Le Wu, Hefei University of Technology</td>
+                </tr>
+                <tr>
+                    <td>10:50-11:10</td>
+                    <td>Statler B</td>
+                    <td>Keynote Talk 2 by Prof. Harrie Oosterhuis, Radboud University</td>
+                </tr>
+                <tr>
+                    <td>11:10-11:30</td>
+                    <td>Statler B</td>
+                    <td>Keynote Talk 3 by Dr. Daisy Liu, StarPlan AI</td>
+                </tr>
+                <tr>
+                    <td>11:30-11:50</td>
+                    <td>Statler B</td>
+                    <td>Oral by Milad Sabouri, DePaul University (Title: Effectiveness of LLMs in Temporal User Profiling for Recommendation)</td>
+                </tr>
+                <tr>
+                    <td>11:50-12:10</td>
+                    <td>Statler B</td>
+                    <td>Oral by Liping Zhang, Adobe (Title: UWM3R: Uncertainty-Weighted Multi-Intent Experts for Direct–Deep Multimodal Ranking)</td>
+                </tr>
+                <tr>
+                    <td>12:10-12:30</td>
+                    <td>Statler B</td>
+                    <td>Oral by Anshuman GUHA, Johns Hopkins University (Title: Token Optimized Indexing with Named Entity Extraction from Conversational Data Services)</td>
+                </tr>
+                <tr>
+                    <td>12:30-13:30</td>
+                    <td>Presidential Ballroom</td>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <td>14:00-14:20</td>
+                    <td>Statler B</td>
+                    <td>Oral by Lixi Deng, JD.COM (Title: Adversarial Alignment and Disentanglement for Cross-Domain CTR Prediction with Domain-Encompassing Features)</td>
+                </tr>
+                <tr>
+                    <td>14:20-14:40</td>
+                    <td>Statler B</td>
+                    <td>Oral by Zifeng Mai, Sun Yat-Sen University (Title: DENT: Detecting and Refining Negative Transfer for Non-Overlapped Multi-Domain Recommendation)</td>
+                </tr>
+                <tr>
+                    <td>14:40-15:00</td>
+                    <td>Statler B</td>
+                    <td>Oral by Yuchao Zhang, Beijing University of Chemical Technology (Title: Temporally-Aware Integration of Randomized Controlled Trials for Mitigating Hidden Confounding in Recommendations)</td>
+                </tr>
+                <tr>
+                    <td>15:00-15:20</td>
+                    <td>Statler B</td>
+                    <td>Oral by Jorge Cristhian Chamby-Diaz, Samsung Eletronica da Amazonia Ltda (Title: User Ranking System using Pareto Optimality and Usage Time Metrics)</td>
+                </tr>
+                <tr>
+                    <td>15:20-15:40</td>
+                    <td>Statler B</td>
+                    <td>Oral by Sepinood Haghighi, University of Windsor (Title: Aspect-Aware Sentiment Interaction Modeling with DeBERTa for Enhanced Review-Based Recommendations)</td>
+                </tr>
+                <tr>
+                    <td>15:40-16:00</td>
+                    <td>Statler B</td>
+                    <td>Oral by Shuqi Qin, MatrixOrigin (Title: Adaptive Calibrated Doubly Robust Estimators for Debiased Recommendation)</td>
+                </tr>
+                <tr>
+                    <td>16:00-16:30</td>
+                    <td>Capital Terrace, Congressional</td>
+                    <td>Coffee Break</td>
+                </tr>
+                <tr>
+                    <td>17:00-17:20</td>
+                    <td>Statler B</td>
+                    <td>Oral by Xiaxin Yuan, University of Science and Technology of China (Title: SemiSL-RDC: Semi-Supervised Rating Distribution Calibration via Pivot User for Debiasing Recommendation Systems)</td>
+                </tr>
+                <tr>
+                    <td>17:20-18:00</td>
+                    <td>Statler B</td>
+                    <td>Poster Session</td>
+                </tr>
+            </tbody>
+        </table>
  
         <h2>Organizers</h2>
         
